@@ -19,11 +19,15 @@ System.out.println(pi.length());
 	//speak(pi.charAt(i));
 //System.out.println(pi.charAt(i));
 //}
-System.out.println("Guess the digits of pi!");
-char input = getInputFromUser();
 
-if(input == '9') {
-	System.out.println("Winner");
+for (int i = 0; i <=(pi.length()); i++) {
+	System.out.println("Guess the digits of pi!");
+	char input = getInputFromUser();
+	if(input == pi.charAt(i)) {
+	System.out.println("Correct");
+	}else {
+		System.err.println("Incorrect");
+	}
 }
 	// 4. Print ALL the digits of of Pi (hint: use a loop)
 
